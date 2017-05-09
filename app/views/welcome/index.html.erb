@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-">
+            <form id='form' >
+                <div class="box">
+                  <% MenuConfig.current_menu.each do |item,content| %> 
+                    <div class="top">
+                        <h5><%= item%></h5>
+                    </div>
+                    <div class="bottom">
+                      <% content.each do |subject,detail| %>
+                       <input type="checkbox" name="menItems"  onclick="myFunction(this)" 
+                value="<%= subject["name"] %>&nbsp;&nbsp;&nbsp;&nbsp;<%= subject["price"] %>">
+                            <%= subject["name"] %><br>
+                            <%= subject["ingredients"] %><br>
+                            <%= subject["price"] %><br>
+                       <%end%>
+                    </div>
+                     <%end%>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+        <div id = "ordered-list" class="col-md-12">
+            <h1>Ordered List</h1>
+            <div id="order">
+            </div>
+        </div>
+    </div>
+    </div>
+    
+</div>
+</div>
+

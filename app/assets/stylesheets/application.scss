@@ -1,0 +1,29 @@
+ @import "bootstrap";
+ .box {
+  float: left;
+  width: 499px;
+  margin: 20px;
+  border: 1px solid black;
+}
+
+ .box .top {
+  padding: 6px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+ .box .bottom {
+  padding: 6px;
+  background-color: red;
+  color: white;
+  display: none;
+  border: 1px solid black;
+}
+
+
+#ordered-list{
+ position: fixed;
+ border: 1px solid lightblue;
+}

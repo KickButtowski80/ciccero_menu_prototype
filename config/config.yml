@@ -1,0 +1,115 @@
+Most Popular:
+    - name: Chicken Pesto Farfala
+      ingredients:
+      price: $11.00+
+    - name: Hot Wings
+      ingredients:
+      price: $8.50 
+    - name: Ciccero's Treat
+      ingredients: Two large pizzas with 3 toppings and 3 cans of soda.
+      price: $25.00 
+    - name: Large Pizza Special
+      ingredients: Large pizza with 3 toppings, 10-piece hot wings, and 3 cans of soda.
+      price: $21.00 
+    - name: Two Pastas Special
+      ingredients: Two pastas of your choice, 2 green salads, 2 garlic breads, and 2 cans of soda.
+      price: $21.00+
+    - name: Make Your Own Pizza
+      ingredients: Mozzarella.
+      price: $12.00+
+    - name: Personal Pizza
+      ingredients: ONE 9" pizza.
+      price: $7.50+
+    - name: Spaghetti
+      ingredients: Homemade marinara sauce, Parmesan, and mozzarella. Vegetarian.
+      price: $9.00+
+    - name: Cheesecake
+      ingredients:
+      price: $3.50
+    - name: Chocolate Cake
+      ingredients:
+      price: $3.50
+      
+Specials:
+    - name: Ciccero's Treat
+      ingredients: Two large pizzas with 3 toppings and 3 cans of soda.
+      price: $25.00 
+    
+    - name: Two Plates Special
+      ingredients: Two plates with 2 sides each and 2 cans of soda.
+      price: $23.00+
+    
+    - name: Large Pizza Special
+      ingredients: Large pizza with 3 toppings, 10-piece hot wings, and 3 cans of soda.
+      price: $21.00 
+    
+    - name: Two Pastas Special
+      ingredients: Two pastas of your choice, 2 green salads, 2 garlic breads, and 2 cans of soda.
+      price: $21.00+
+
+Drinks:
+    - name: Soft Drink
+      ingredients: Soft Drink
+      price: $1.50 
+    - name: Snapple
+      ingredients: Snapple
+      price: $2.25 
+    - name: Bottled Water
+      ingredients: Bottled Water
+      price: $1.30 
+
+Salads:
+    - name: Watermelon Kale Salad
+      ingredients: Fresh watermelon, arugula, lacinato kale, quinoa, walnut, and crumbled feta tossed with balsamic glaze and lemon vinaigrette. Vegetarian.
+      price: $9.00+
+    - name: Grain Chicken Salad
+      ingredients: Grilled chicken breast, farro, quinoa, fire-roasted corn, arugula, cherry tomato, radish, and cilantro honey lime vinaigrette.
+      price: $10.50
+    - name: Milano Salad
+      ingredients: Grilled chicken breast, mixed baby lettuce, roasted pepper, butternut squash, cherry tomato, fresh basil, almonds, penne, and Parmesan with balsamic vinaigrette.
+      price: $10.50
+    - name: Chinese Chicken Salad
+      ingredients: Grilled chicken, mixed lettuce, crispy wonton, rice noodle, almonds, sesame seeds, and orange with red ginger vinaigrette.
+      price: $10.50
+    - name: Antipasto Salad
+      ingredients: Genoa salami, Black Forest ham, and pepperoni with mixed greens, mozzarella, black olive, tomato, pepperoncini, and balsamic vinaigrette.
+      price: $10.50 
+    - name: Mediterranean Salad
+      ingredients: Grilled chicken breast, chopped fresh greens, artichoke heart, crumbled feta, tomato, bell pepper, red onion, Greek olive, and fresh basil with tahini vinaigrette.
+      price: $10.50 
+    - name: Santa Fe Shrimp Salad
+      ingredients: Grilled shrimp, red pepper, roasted corn, jicama, tomato, black beans, red onion, cilantro, mixed lettuce, and Monterrey jack cheese with Southwest dressing.
+      price: $12.00
+    - name: Cobb Salad
+      ingredients: Grilled chicken breast, romaine, fresh avocado, cherry tomato, applewood bacon, hard-boiled egg, and crumbled bleu cheese with red wine vinaigrette.
+      price: $10.50
+    - name: Lemon Chicken Salad
+      ingredients: Grilled chicken breast, romaine, fresh avocado, artichoke heart, red onion, tomato, carrots, zucchini, Greek olive, and cilantro honey lime vinaigrette.
+      price: $10.50
+    - name: Caesar Salad
+      ingredients: Romaine, garlic croutons, Parmesan cheese, and house-crafted Caesar dressing. Vegetarian.
+      price: $8.00+
+    - name: Steak Salad
+      ingredients: Hangar steak, arugula, butter lettuce, baby mixed lettuce, radish, butternut squash, cherry tomato, and red wine vinaigrette.
+      price: $11.00
+    - name: Salmon Salad
+      ingredients: Grilled fresh salmon, arugula, baby mixed lettuce, butter lettuce, roasted cauliflower, roasted butternut squash, roasted beet, cherry tomato, walnut, jicama, and dried cranberries tossed in a citrus vinaigrette.
+      price: $12.00
+    - name: Green Tossed Salad
+      ingredients: With your choice of dressing.
+      price: $3.50+
+    
+Desserts:
+  - name: Cheese Cake
+    ingredients: Cheese Cake
+    price: $3.25
+  - name: Chocolate Mousse Cake
+    ingredients: Chocolate Mousse Cake
+    price: $3.25
+  - name: Tiramisu
+    ingredients: Tiramisu
+    price: $3.25
+    
+
+
+      
