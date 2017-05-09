@@ -101,13 +101,13 @@ Salads:
     
 Desserts:
   - name: Cheese Cake
-    ingredients: Cheese Cake
+    ingredients: ~  
     price: $3.25
   - name: Chocolate Mousse Cake
-    ingredients: Chocolate Mousse Cake
+    ingredients: ~  
     price: $3.25
   - name: Tiramisu
-    ingredients: Tiramisu
+    ingredients: ~  
     price: $3.25
     
 

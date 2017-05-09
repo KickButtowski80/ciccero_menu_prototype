@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-">
+        <div class="col-md-6">
             <form id='form' >
                 <div class="box">
                   <% MenuConfig.current_menu.each do |item,content| %> 
@@ -12,7 +12,10 @@
                        <input type="checkbox" name="menItems"  onclick="myFunction(this)" 
                 value="<%= subject["name"] %>&nbsp;&nbsp;&nbsp;&nbsp;<%= subject["price"] %>">
                             <%= subject["name"] %><br>
-                            <%= subject["ingredients"] %><br>
+                            <% unless subject["ingredients"].nil?  %>
+                                <%= subject["ingredients"]%>
+                                <%= tag(:br) %>
+                            <%end%>
                             <%= subject["price"] %><br>
                        <%end%>
                     </div>
@@ -21,12 +24,12 @@
             </form>
         </div>
         <div class="row">
-        <div id = "ordered-list" class="col-md-12">
+        <div id = "ordered-list" class="col-md-6">
             <h1>Ordered List</h1>
             <div id="order">
             </div>
-        </div>
-    </div>
+        </div> 
+      </div>
     </div>
     
 </div>
