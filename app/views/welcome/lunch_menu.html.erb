@@ -7,10 +7,10 @@
                 <div class="box" style="margin-top: 22px;">
                   <% LunchMenuConfig.current_menu.each do |item,content| %> 
                     <div class="top">
-                        <h5>
+                        <span>
                             <%= item%> 
                             <span style="color: lightgray;float:right;">v</span>
-                        </h5>
+                        </span>
                     </div>
                     <div class="bottom">
                       <% content.each do |subject,detail| %>
@@ -51,16 +51,16 @@
              <div style="text-align: right; color:green; font-weight: 500;margin-bottom: 19px;">
                SMALL(2)&nbsp;&nbsp;MEDIUM(2)&nbsp;&nbsp;LARGE(2)
             </div>
-            <div class="box">
+            <div class="box" id="topping-pizza">
                   <% PizzaLunchConfig.current_menu.each do |item,content| %> 
                       <% content.each do |subject,detail| %>
                         <div  class="top" style="text-align: left;">
-                            <h5 style=" display: inline-block;">
+                            <span style=" display: inline-block;">
                                 <%= subject["name"] %>
-                            </h5>
+                            </span>
                             <span style="float:right; color: red;">
                                 <% subject["price"].each do |p| %>
-                                    <%= p %>&nbsp;&nbsp;&nbsp; 
+                                    <%= p %>&nbsp;&nbsp; 
                                 <%end%>  
                                 <span style="color: lightgray;text-align:right;">v</span>
                             </span> 
@@ -76,7 +76,6 @@
                        <%end%>
                  <%end%>
              </div>
-             
         </div>
         
         
@@ -87,7 +86,7 @@
            </div>
            <div class="dashed-red">
                <div class="col-md-4" style="float:right;" >
-                 <h5>2 Large Pizzas w/3 TOpping and 3 Cans of Soda <span style="color:red">(excluding Extra Cheese)</span></h5> 
+                 <h5>2 Large Pizzas with 3 Toppings and 3 Cans of Soda <span style="color:red">(excluding Extra Cheese)</span></h5> 
                  <h6>for only 
                        <span style="color:red">
                            $23.50 + tax
@@ -95,7 +94,7 @@
                    </h6>
                 </div>
                 <div class="col-md-4" style="float:right;">
-                   <h5> Large Pizza <span style="color:red">(1 only)</span> w/3 Toppings, Large Green Salad & 3 Cans of Soda </h5>
+                   <h5>Large Pizza <span style="color:red">(one only)</span> with 3 Toppings, Large Green Salad & 3 Cans of Soda </h5>
                    <h6>for only 
                        <span style="color:red">
                            $23.50 + tax
@@ -103,7 +102,7 @@
                    </h6>
                 </div>
                 <div class="col-md-4" style="float:right;" >
-                   <h5>1 Small Pizza w/2 Toppings, 1 Pasta of Your Choice, 2 Dinner Salads & 2 Cans of Soda</h5>
+                   <h5>1 Small Pizza with 2 Toppings, 1 Pasta of Your Choice, 2 Dinner Salads & 2 Cans of Soda</h5>
                    <h6>for only 
                        <span style="color:red">
                            $19.50 + tax
