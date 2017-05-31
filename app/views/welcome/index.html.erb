@@ -1,6 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6">
+             <%= link_to "lunch menu", welcome_lunch_menu_path %>
             <form id='form' >
                 <div class="box">
                   <% MenuConfig.current_menu.each do |item,content| %> 
@@ -22,14 +23,13 @@
                      <%end%>
                 </div>
             </form>
-        </div>
-        <div class="row">
-        <div id = "ordered-list" class="col-md-6">
-            <h1>Ordered List</h1>
-            <div id="order">
-            </div>
-        </div> 
+        <!--<div id = "ordered-list" class="col-md-6">-->
+        <!--    <h1>Ordered List</h1>-->
+        <!--    <div id="order">-->
+        <!--    </div>-->
+        <!--</div> -->
       </div>
+     
     </div>
     
 </div>

@@ -1,0 +1,128 @@
+<h1>Lunch Menu </h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6">
+            <form id='form' >
+                <div class="box" style="margin-top: 22px;">
+                  <% LunchMenuConfig.current_menu.each do |item,content| %> 
+                    <div class="top">
+                        <h5>
+                            <%= item%> 
+                            <span style="color: lightgray;float:right;">v</span>
+                        </h5>
+                    </div>
+                    <div class="bottom">
+                      <% content.each do |subject,detail| %>
+                       <input type="checkbox" name="menItems"  onclick="myFunction(this)" 
+                value="<%= subject["name"] %>&nbsp;&nbsp;&nbsp;&nbsp;<%= subject["price"] %>">
+                            <%= subject["name"] %><br>
+                            <% unless subject["ingredients"].nil?  %>
+                                <%= subject["ingredients"]%>
+                                <%= tag(:br) %>
+                            <%end%>
+                            <%= subject["price"] %><br>
+                       <%end%>
+                    </div>
+                     <%end%>
+                </div>
+            </form>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+            <h1 class="text-center"   style="color:red;"> PIZZA</h1>
+            <div class ="text-center" style="border: 1px solid red; color: #fff; background: red;">
+                <h2>BUY 1 GET 1 FREE </h2>
+            </div>
+            <div class="top">
+                <h2 style="color: green; margin-top: 25px; padding: 25px;border: 1px solid red; background:red;">TOPPINGS: 
+                 <span style="color: lightgray;float:right;">v</span>
+                </h2>
+            </div>
+            <div class="bottom" style="display:none;">
+                <p  style="color: red; font-weight: 700"  >
+                    Pepperoni, Italian Sausage, Chicken, Mushrooms, Onions, Bell Peppers, 
+                    Candian Bacon, Black Olives, Meatballs, Ham, Pineapple, Jalapenos,
+                    Salami, Anchovies, Fresh Tomatoes, Fresh Garlic, Roasted Garlic, 
+                    Cilantro, Grilled Eggplant, Grilled Zucchini, Red Onion, Roasted Peppers
+                    , Capers, Sun-dried Tomatoes, Feta Cheese, Artichoke Hearts
+                </p>
+            </div>
+            
+             <div style="text-align: right; color:green; font-weight: 500;margin-bottom: 19px;">
+               SMALL(2)&nbsp;&nbsp;MEDIUM(2)&nbsp;&nbsp;LARGE(2)
+            </div>
+            <div class="box">
+                  <% PizzaLunchConfig.current_menu.each do |item,content| %> 
+                      <% content.each do |subject,detail| %>
+                        <div  class="top" style="text-align: left;">
+                            <h5 style=" display: inline-block;">
+                                <%= subject["name"] %>
+                            </h5>
+                            <span style="float:right; color: red;">
+                                <% subject["price"].each do |p| %>
+                                    <%= p %>&nbsp;&nbsp;&nbsp; 
+                                <%end%>  
+                                <span style="color: lightgray;text-align:right;">v</span>
+                            </span> 
+                            <span>
+                            <%= tag(:br) %>
+                            </span>
+                         </div>   
+                         <% unless subject["ingredients"].nil?  %>
+                             <div class="bottom">
+                                <%= subject["ingredients"]%>
+                             </div>
+                         <%end%>
+                       <%end%>
+                 <%end%>
+             </div>
+             
+        </div>
+        
+        
+    </div>
+       <div class="row ">
+           <div class="col-md-12 text-center">
+               <h2 style="margin-top:25px;">CICCERO'S TREAT</h2>
+           </div>
+           <div class="dashed-red">
+               <div class="col-md-4" style="float:right;" >
+                 <h5>2 Large Pizzas w/3 TOpping and 3 Cans of Soda <span style="color:red">(excluding Extra Cheese)</span></h5> 
+                 <h6>for only 
+                       <span style="color:red">
+                           $23.50 + tax
+                       </span>
+                   </h6>
+                </div>
+                <div class="col-md-4" style="float:right;">
+                   <h5> Large Pizza <span style="color:red">(1 only)</span> w/3 Toppings, Large Green Salad & 3 Cans of Soda </h5>
+                   <h6>for only 
+                       <span style="color:red">
+                           $23.50 + tax
+                       </span>
+                   </h6>
+                </div>
+                <div class="col-md-4" style="float:right;" >
+                   <h5>1 Small Pizza w/2 Toppings, 1 Pasta of Your Choice, 2 Dinner Salads & 2 Cans of Soda</h5>
+                   <h6>for only 
+                       <span style="color:red">
+                           $19.50 + tax
+                       </span>
+                   </h6>
+                </div>
+           </div>
+       </div>
+    </div>
+      <!--  <div class="row">-->
+      <!--  <div id = "ordered-list" class="col-md-6">-->
+      <!--      <h1>Ordered List</h1>-->
+      <!--      <div id="order">-->
+      <!--      </div>-->
+      <!--  </div> -->
+      <!--</div>-->
+     
+    </div>
+    
+</div>
+</div>
+
